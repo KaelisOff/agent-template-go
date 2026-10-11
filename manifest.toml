@@ -1,0 +1,18 @@
+# Le manifeste de l'agent : https://github.com/KaelisOff/agent-sdk-go/blob/main/docs/manifeste.md
+id = "io.github.votre-compte.mon-agent"   # votre compte GitHub (en minuscules) puis le nom de l'agent
+name = "Mon agent"
+version = "0.1.0"
+description = "Chaque matin de semaine, un mot d'encouragement en notification."
+author = "Votre nom"
+license = "Apache-2.0"
+source = "https://github.com/votre-compte/mon-agent"
+
+[run]
+memory_mb = 64
+timeout_min = 5
+
+[permissions]
+model = true
+notify = true
+storage_kb = 16
+schedule = ["0 9 * * 1-5"]
